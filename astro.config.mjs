@@ -16,10 +16,7 @@ export default defineConfig({
         sidebar: [
             {
                 label: 'Progression',
-                items: [
-                    // Each item here is one entry in the navigation menu.
-                    { label: 'Example Guide', slug: 'guides/example' },
-                ],
+                items: [{ autogenerate: { directory: 'reference' } }],
             },
             {
                 label: 'Create',
@@ -27,10 +24,7 @@ export default defineConfig({
             },
             {
                 label: 'Enchanting',
-                items: [
-                    // Each item here is one entry in the navigation menu.
-                    { label: 'Example Guide', slug: 'guides/example' },
-                ],
+                items: [{ autogenerate: { directory: 'reference' } }],  
             },
             {
                 label: 'Advice',
@@ -43,10 +37,10 @@ export default defineConfig({
                     { label: 'Color Text', slug: 'miscellaneous/qol/color-text' },
                     { label: 'Custom Armor Stands', slug: 'miscellaneous/features/armor-stands' },
                     { label: 'Horse Stats', slug: 'miscellaneous/qol/horse-stats' },
-                    { label: 'Horse Stats', slug: 'miscellaneous/qol/ping' },
-                    { label: 'Horse Stats', slug: 'miscellaneous/social/leash' },
-                    { label: 'Horse Stats', slug: 'miscellaneous/social/kiss' },
-                    { label: 'Horse Stats', slug: 'miscellaneous/social/feed' },
+                    { label: 'Ping Wheel', slug: 'miscellaneous/qol/ping' },
+                    { label: 'Leashing Players', slug: 'miscellaneous/social/leash' },
+                    { label: 'Kissing Players', slug: 'miscellaneous/social/kiss' },
+                    { label: 'Feeding Players', slug: 'miscellaneous/social/feed' },
                     { label: 'Voice Chat', slug: 'miscellaneous/social/voice-chat' },
                 ],
             }
