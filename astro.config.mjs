@@ -43,6 +43,10 @@ export default defineConfig({
                     { label: 'Color Text', slug: 'miscellaneous/qol/color-text' },
                     { label: 'Custom Armor Stands', slug: 'miscellaneous/features/armor-stands' },
                     { label: 'Horse Stats', slug: 'miscellaneous/qol/horse-stats' },
+                    { label: 'Horse Stats', slug: 'miscellaneous/qol/ping/' },
+                    { label: 'Horse Stats', slug: 'miscellaneous/social/leash/' },
+                    { label: 'Horse Stats', slug: 'miscellaneous/social/kiss/' },
+                    { label: 'Horse Stats', slug: 'miscellaneous/social/feed/' },
                     { label: 'Voice Chat', slug: 'miscellaneous/social/voice-chat' },
                 ],
             }
