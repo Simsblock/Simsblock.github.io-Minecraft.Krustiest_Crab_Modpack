@@ -1,0 +1,74 @@
+---
+title: Voice Chat
+description: How to configure your microphone, adjust player volumes, and use audio groups.
+sidebar:
+  label: Voice Chat
+  order: 2
+---
+
+import { Aside, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+
+
+[Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) allows you to talk in the Proximity of others or create Voice Groups to talk freely.
+
+---
+
+## Keybinds
+
+The following Keybinds exist:
+
+| Action | Default Keybind | Description |
+| :--- | :---: | :--- |
+| **Voice Chat GUI** | `V` | Opens the voice chat GUI. |
+| **Voice Chat Settings** | *Not bound by default* | Opens the voice chat settings. |
+| **Group Chats** | `G` | Opens the group chat GUI. |
+| **Push To Talk** | *Not bound by default* | The push to talk key (Only when using activation type PTT). You get to set this in the onboarding guide. |
+| **Mute Microphone** | `M` | The mute button (Only when using voice activation type Voice). |
+| **Disable Voice Chat** | `N` | This button disables the voice chat. Other people can't hear you and you can't hear them. |
+| **Hide Voice Chat Icons** | `H` | This button hides all icons related to the voice chat. |
+| **Toggle Recording** | *Not bound by default* | Toggles voice chat audio recording. |
+| **Whisper** | *Not bound by default* | Hold down to whisper. |
+
+---
+
+## Configuration
+
+Other Players cannot hear you and you cant hear them until you have set up the voice chat. \
+To do so open the Voice Chat GUI and you will be prompted to configure it.
+
+<Aside type="tip">
+  If another player is way too loud or quiet, open the main menu, click **Adjust volumes**, and fine-tune individual player amplification sliders without changing your overall master game volume.
+</Aside>
+
+---
+
+## Audio Groups
+
+Audio Groups allow you to talk to others from at distance.
+
+<Tabs>
+  <TabItem label="Creating a Group">
+    1. Open the Voice Chat GUI.
+    2. Select **Groups**.
+    3. Click **Create Group** and type a if necessary password and a room name.
+    4. Select the **Group Type**
+    > **Normal**: Players outside the group cannot hear you, but players in the group do hear them. \
+    > **Open**: Players outside and inside the group can hear each other. \
+    > **Isolated**: Players in the group only hear each other.
+  </TabItem>
+  <TabItem label="Joining a Group">
+    1. Open the Voice Chat GUI.
+    2. Select **Groups**.
+    3. Click the desired group session and enter the passcode if prompted.
+  </TabItem>
+</Tabs>
+
+---
+
+## Troubleshooting
+
+If your connection cuts out or a desync occurs mid-session, use these direct chat terminal utilities to diagnostic patch your link:
+
+* `/voicechat test username` — Runs a brief loopback echo test to verify if your microphone is successfully registering data packets.
+* `/voicechat reload` — Flushes your local network audio cache data and re-binds your system device drivers without needing to disconnect from the multiplayer server.

@@ -1,0 +1,36 @@
+---
+title: Colored Text
+description: How to configure and use text formatting.
+sidebar:
+  label: Colored Text
+  order: 2
+---
+
+import { Aside, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+
+import ColorExample from '../../../../assets/miscellaneous/qol/color-example.png';
+
+[Text formatting Everywhere](https://modrinth.com/mod/text-formatting-everywhere) allows you to use colors in your text, like in the legacy formatting system.
+
+---
+
+## How To do it
+
+Before writing text add `§#`, # being a number from 0-9 or r.
+
+> 0 : Black \
+> 1 : Blue \
+> 2 : Green \
+> 3 : Cyan \
+> 4 : Red \
+> 5 : Magenta \
+> 6 : Orange \
+> 7 : Light Gray \
+> 8 : Dark Gray \
+> 9 : Aquamarine \
+> r : White (Standard color)
+
+<Image src={ColorExample} alt="Color Example" />
+
+---
