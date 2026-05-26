@@ -1,25 +1,36 @@
 ---
-title: Welcome to the Krustiest of Krabs!
+title: Krustiest Crab!
 description: A Create Modpack with a the potentional to corrupt your world!
 template: splash
-hero:
-  tagline: A Create Modpack with a the potentional to corrupt your world!
-  image:
-    file: ../../assets/houston.webp
+head:
+  - tag: style
+    content: '.content-panel:first-child .sl-container > h1 { display: none !important; }'
 ---
 
 import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 
+import logoImage from '../../assets/logo.png';
 import modrinthBtn from '../../assets/available-modrinth.png'; 
 import githubBtn from '../../assets/github.png';
+import simsblockBtn from '../../assets/simsblock.png';
 
-<div class="not-content" style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: -2.5rem; margin-bottom: 3rem;">
+
+<div class="not-content" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 4rem 1rem 2rem 1rem; max-width: 800px; margin: 0 auto;">
+  <Image src={ logoImage } alt="Krustiest Crab Mascot" width={240} height={240} style={{ marginBottom: '2rem', height: 'auto', maxWidth: '100%', borderRadius: '8px' }} />
+  <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', fontWeight: '900', lineHeight: '1.1', margin: '0 0 1rem 0', color: 'var(--sl-color-white)' }}>Welcome to the Krustiest of Krabs!</h1>
+  <p style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', color: 'var(--sl-color-gray-2)', margin: '0 0 2rem 0' }}>A Create Modpack with the potential to corrupt your world!</p>
+</div>
+
+<div class="not-content" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-bottom: 3rem;">
   <a href="https://modrinth.com/modpack/krustiest-crab" target="_blank" style="transition: transform 0.2s ease; display: inline-block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    <Image src={ modrinthBtn } alt="Get on Modrinth" height={64} style={{ display: 'block', height: '64px', width: 'auto', objectFit: 'contain' }} />
+    <Image src={ modrinthBtn } alt="Get on Modrinth" height={64} style={{ display: 'block', height: '64px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
+  </a>
+  <a href="https://github.com/Simsblock/Minecraft.Krustiest_Crab_Modpack" target="_blank" style="transition: transform 0.2s ease; display: inline-block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <Image src={ githubBtn } alt="Repository on Github" height={64} style={{ display: 'block', height: '64px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
   </a>
   <a href="https://github.com/Simsblock" target="_blank" style="transition: transform 0.2s ease; display: inline-block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    <Image src={ githubBtn } alt="Me Linktree" height={64} style={{ display: 'block', height: '64px', width: 'auto', objectFit: 'contain' }} />
+    <Image src={ simsblockBtn } alt="Me :3" height={64} style={{ display: 'block', height: '64px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
   </a>
 </div>
 
