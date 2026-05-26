@@ -25,16 +25,10 @@ jobs:
       - name: Checkout your repository
         uses: actions/checkout@v4
 
-      # 1. ADD THIS STEP BELOW TO FORCE NODE 22
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm' # Automatically caches your node_modules for faster builds
-
-      # 2. Keep the original Astro deployment action right after it
       - name: Install, initialize and setup Starlight
         uses: withastro/action@v3
+        with:
+          node-version: 22
 
   deploy:
     needs: build
